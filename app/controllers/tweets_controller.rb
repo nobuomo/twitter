@@ -6,7 +6,6 @@ class TweetsController < ApplicationController
   end
   
   
-  
   def new
     if params[:back]
       @tweet = Tweet.new(tweet_params)
@@ -14,7 +13,6 @@ class TweetsController < ApplicationController
       @tweet = Tweet.new
     end
   end
-  
   
   
   def create
@@ -39,7 +37,6 @@ class TweetsController < ApplicationController
      end
   end
      
-
   def destroy
      @tweet = Tweet.find(params[:id])
      @tweet.destroy
